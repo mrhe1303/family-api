@@ -76,7 +76,7 @@ def add_member():
         required_fields = ["first_name", "age", "lucky_numbers"]
         for field in required_fields:
             if field not in data:
-                return jsonify({"error": f"Missing requiered field: {field}"}), 400
+                return jsonify({"error": f"Missing required field: {field}"}), 400
             
         if data["age"] <= 0:
             return jsonify({"error": "Age must be greater than 0"}), 400

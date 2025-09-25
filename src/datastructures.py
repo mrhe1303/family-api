@@ -64,13 +64,13 @@ class FamilyStructure:
             if member["id"] == id:
                 del self._members[i]
                 return True
-            return False
+        return False
 
     def get_member(self, id):
         for member in self._members:
             if member["id"] == id:
                 return member
-            return None
+        return None
 
     # This method is done, it returns a list with all the family members
     def get_all_members(self):
